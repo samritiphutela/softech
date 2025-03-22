@@ -111,8 +111,8 @@
 //     console.log("server started on the port 3000")
 // })
 const express = require('express')
-const cors=require('cors')
 const indexRouter=require('./Router/Index1')
+const cors=require('cors')
 const app = express();
 app.use(cors());
 app.use(express.json())
