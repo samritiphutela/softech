@@ -4,8 +4,9 @@ const database=require('./database/db2')
 const st=require('./student')
 const su=require('./index')
 const app=express();
-app.use(express.json())
 app.use(cors())
+app.use(express.json())
+
 app.get('/getdata',async (req,res)=>
 {
     const db=await database.main();
